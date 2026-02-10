@@ -1,5 +1,5 @@
 // Thay đổi nội dung búc thư ở đây
-var letterContent = "Đây là nội dung của bức thư mà người ấy sẽ đọc được. Hãy viết gì đó cho người đó thôi nào. Cảm ơn bạn đã xem"
+var letterContent = "Gửi  em Dương Thị Vân yêu dấu, anh là Thời đây. Anh viết bức thư này để tỏ tình với em nhân dịp Valentine. Anh biết chúng ta chưa quen biết nhau nhiều, nhưng anh cảm thấy rất đặc biệt khi ở bên em. Khi anh biết đến em,em có nói rằng không nên tin ai ngoại chừ em, và cách em cho anh những trận game tạ vcl.Trước đây anh hy vọng chúng ta có thể tìm hiểu nhau hơn và cùng nhau tạo nên những kỷ niệm đẹp nhưng giờ thì em cho ah bài học về lồn người rồi em mạnh hơn ngoài sức tưởng tượng của anh.Anh đoán anh chỉ là 1 trong danh sách chong iu cua em thôi, nên anh nghĩ em còn có nhiều quà valentine từ các anh khác nữa ,cứ mặc định anh là 1 thằng tệ bạc đi không danh phận thế này anh tự lặng lẽ rời đi thôi ko cần phải đuổi anh đâu.Đọc đến đây chắc là đúng ý em rồi,vui lắm đúng không?. Chúc em một ngày Valentine thật vui vẻ và hạnh phúc bên những người mà em thích!";
 
 // Tốc độ viết chữ. Số càng nhỏ tốc độ càng nhanh. 50 là tốc độ khá phù hợp
 durationWrite = 50 

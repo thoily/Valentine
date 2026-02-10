@@ -20,7 +20,7 @@ html, body {
 
 .paperHeart {
     position: absolute;
-    height: 100px;
+    height: clamp(50px, 12vw, 100px);
     top: 80%;
     opacity: 0;
     filter: drop-shadow(0 0 20px white);
@@ -28,27 +28,27 @@ html, body {
 }
 
 .paperHeart1 {
-    left: 50px;
+    left: clamp(10px, 5vw, 50px);
 }
 
 .paperHeart2 {
-    left: 250px;
+    left: clamp(30px, 20vw, 250px);
 }
 
 .paperHeart3 {
-    left: 500px;
+    left: clamp(50px, 35vw, 500px);
 }
 
 .paperHeart4 {
-    left: 800px;
+    left: clamp(70px, 50vw, 800px);
 }
 
 .paperHeart5 {
-    left: 1100px;
+    left: clamp(50px, 65vw, 1100px);
 }
 
 .paperHeart6 {
-    left: 1400px;
+    left: clamp(70px, 80vw, 1400px);
 }
 
 .boxCloud {
@@ -238,7 +238,7 @@ html, body {
     font-family: "Rubik Glitch Pop", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 120px;
+    font-size: clamp(30px, 15vw, 120px);
     color: pink;
     height: fit-content;
     width: fit-content;
@@ -248,7 +248,7 @@ html, body {
     flex-wrap: wrap;
     text-shadow: 0 0 20px white;
     animation: appearTitle 2s linear 3.1s forwards, floatingWords 4s ease-in-out infinite;
-    
+    padding: 0 20px;
 }
 
 .container .btnBox {
@@ -256,8 +256,8 @@ html, body {
     top: 150%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 160px;
-    width: 400px;
+    height: clamp(100px, 20vw, 160px);
+    width: clamp(200px, 50vw, 400px);
     opacity: 1;
 }
 
@@ -314,11 +314,12 @@ html, body {
     font-family: "Rubik Glitch Pop", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 40px;
+    font-size: clamp(16px, 5vw, 40px);
     color: #fc6885;
     background-color: transparent;
     border: none;
     text-shadow: 0 0 10px pink;
+    padding: 10px;
 }
 
 .openBtn:hover {
@@ -340,15 +341,15 @@ html, body {
 }
 
 .cardValentine {
-    position: absolute;
+      position: absolute;
     top: 200%;
     left: 50%;
     opacity: 0;
     transform: translate(-50%, -50%);
-    height: 600px;
-    width: 800px;
+    height: clamp(300px, 70vh, 600px);
+    width: clamp(280px, 90vw, 800px);
     background-color: transparent;
-    transition: .5;
+    transition: .5s;
 }
 
 .cardValentine.active {
@@ -357,10 +358,10 @@ html, body {
     left: 50%;
     opacity: 1;
     transform: translate(-50%, -50%);
-    height: 600px;
-    width: 800px;
+    height: clamp(300px, 70vh, 600px);
+    width: clamp(280px, 90vw, 800px);
     background-color: transparent;
-    transition: .5;
+    transition: .5s;
     animation: animateCard 2s ease-in-out forwards;
 }
 
@@ -368,11 +369,12 @@ html, body {
     from {
         top: 200%;
     }
+    }
 
     to {
         top: 50%;
     }
-}
+
 
 .cardValentine .left {
     z-index: 2;
@@ -410,8 +412,8 @@ html, body {
 
 .boxTitleCard {
     position: relative;
-    height: 300px;
-    width: 300px;
+    height: clamp(150px, 30vh, 300px);
+    width: clamp(150px, 30vh, 300px);
     display: flex;
     justify-content: center;
     background-color: white;
@@ -424,8 +426,8 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 280px;
-    width: 280px;
+    height: clamp(140px, 28vh, 280px);
+    width: clamp(140px, 28vh, 280px);
     background-color: #f35553;
     clip-path: polygon(10% 0, 35% 0, 50% 23%, 65% 0, 90% 0, 100% 30%, 50% 100%, 0 30%);
 }
@@ -436,8 +438,8 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 250px;
-    width: 250px;
+    height: clamp(125px, 25vh, 250px);
+    width: clamp(125px, 25vh, 250px);
     background-color: white;
     clip-path: polygon(10% 0, 35% 0, 50% 23%, 65% 0, 90% 0, 100% 30%, 50% 100%, 0 30%);
 }
@@ -477,15 +479,16 @@ html, body {
 
 .des {
     position: absolute;
-    bottom: 40px;
+    bottom: clamp(15px, 5vw, 40px);
     left: 50%;
     transform: translateX(-50%);
     font-family: "Protest Revolution", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: clamp(14px, 4vw, 24px);
     font-style: normal;
     width: 100%;
     text-align: center;
+    padding: 0 10px;
 }
 
 .cardValentine .right {
@@ -505,12 +508,12 @@ html, body {
 }
 
 .rightContent {
-    font-size: 20px;
+    font-size: clamp(14px, 3vw, 20px);
     height: 95%;
     width: 90%;
     background-color: wheat;
     border-radius: 5px;
-    padding: 20px 15px;
+    padding: clamp(10px, 2vw, 20px) clamp(8px, 1.5vw, 15px);
     overflow: auto;
 }
 
@@ -608,5 +611,97 @@ html, body {
 
     100% {
         top: 50%;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container.active .cloud {
+        box-shadow: 60px -20px #ffb3c1, 120px -40px #ffb3c1, 180px -20px #ffb3c1,
+        240px 0px #ffb3c1, 300px -10px #ffb3c1, 360px 10px #ffb3c1, 420px 20px #ffb3c1;
+    }
+
+    .container.active .cloud1 {
+        box-shadow: 60px -20px #ffccd5, 120px -40px #ffccd5, 180px -20px #ffccd5,
+        240px 0px #ffccd5, 300px -10px #ffccd5, 360px 10px #ffccd5, 420px 20px #ffccd5;
+    }
+
+    .container.active .cloud2 {
+        box-shadow: 60px -20px white, 120px -20px white, 180px -20px white,
+        240px 0px white, 300px -10px white, 360px 10px white, 420px 20px white;
+    }
+
+    .cloudBtn {
+        box-shadow: 30px 0 #fc6885, 60px 0 #fc6885, 90px 0 #fc6885, 120px 0 #fc6885,
+        120px 30px #fc6885, 90px 30px #fc6885, 60px 30px #fc6885, 30px 30px #fc6885, 0 30px #fc6885;
+    }
+
+    .cloudBtn::before {
+        box-shadow: 30px 0 white, 60px 0 white, 90px 0 white, 120px 0 white,
+        120px 30px white, 90px 30px white, 60px 30px white, 30px 30px white, 0 30px white;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        background-color: #fc6885;
+    }
+
+    .boxCloud {
+        height: 250px;
+    }
+
+    .container.active .cloud {
+        box-shadow: 40px -15px #ffb3c1, 80px -30px #ffb3c1, 120px -15px #ffb3c1,
+        160px 0px #ffb3c1, 200px -8px #ffb3c1, 240px 8px #ffb3c1;
+    }
+
+    .container.active .cloud1 {
+        box-shadow: 40px -15px #ffccd5, 80px -30px #ffccd5, 120px -15px #ffccd5,
+        160px 0px #ffccd5, 200px -8px #ffccd5, 240px 8px #ffccd5;
+    }
+
+    .container.active .cloud2 {
+        box-shadow: 40px -15px white, 80px -15px white, 120px -15px white,
+        160px 0px white, 200px -8px white, 240px 8px white;
+    }
+
+    .cloudBtn {
+        height: 70px;
+        width: 70px;
+        box-shadow: 25px 0 #fc6885, 50px 0 #fc6885, 75px 0 #fc6885,
+        75px 25px #fc6885, 50px 25px #fc6885, 25px 25px #fc6885, 0 25px #fc6885;
+    }
+
+    .cloudBtn::before {
+        height: 60px;
+        width: 60px;
+        box-shadow: 25px 0 white, 50px 0 white, 75px 0 white,
+        75px 25px white, 50px 25px white, 25px 25px white, 0 25px white;
+    }
+
+    .cardValentine .left {
+        padding: 10px;
+    }
+
+    .cardValentine .right {
+        border-left: 5px solid #c9413f;
+    }
+
+    .cardValentine .left .leftFront {
+        border-left: 5px solid #c9413f;
+    }
+
+    .cardValentine .left .leftBack {
+        border-right: 5px solid #c9413f;
+    }
+
+    .titleCard {
+        font-size: clamp(30px, 8vw, 60px);
+        margin-top: 40px;
+    }
+
+    .artHeart {
+        width: 80%;
     }
 }
