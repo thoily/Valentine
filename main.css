@@ -255,10 +255,13 @@ html, body {
     position: absolute;
     top: 150%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    height: clamp(100px, 20vw, 160px);
-    width: clamp(200px, 50vw, 400px);
+    transform: translate(-50%, 0);
+    height: clamp(80px, 18vh, 160px);
+    width: clamp(80px, 18vh, 160px);
     opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container.active .btnBox {
@@ -279,14 +282,17 @@ html, body {
 }
 
 .cloudBtn {
-    position: relative;
-    height: 100px;
-    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: clamp(60px, 14vh, 100px);
+    width: clamp(60px, 14vh, 100px);
     background-color: #fc6885;
     border-radius: 50%;
-    box-shadow: 60px 0 #fc6885, 120px 0 #fc6885, 180px 0 #fc6885, 240px 0 #fc6885,
-    300px 0 #fc6885, 300px 60px #fc6885, 240px 60px #fc6885, 180px 60px #fc6885,
-    120px 60px #fc6885, 60px 60px #fc6885, 0 60px #fc6885;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cloudBtn::before {
@@ -295,13 +301,10 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 80px;
-    width: 80px;
+    height: clamp(50px, 12vh, 80px);
+    width: clamp(50px, 12vh, 80px);
     background-color: white;
     border-radius: 50%;
-    box-shadow: 60px 0 white, 120px 0 white, 180px 0 white, 240px 0 white,
-    300px 0 white, 300px 60px white, 240px 60px white, 180px 60px white,
-    120px 60px white, 60px 60px white, 0 60px white;
 }
 
 .openBtn {
@@ -309,17 +312,18 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
+    width: 200%;
+    height: 200%;
     font-family: "Rubik Glitch Pop", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: clamp(16px, 5vw, 40px);
+    font-size: clamp(12px, 4vw, 30px);
     color: #fc6885;
     background-color: transparent;
     border: none;
     text-shadow: 0 0 10px pink;
-    padding: 10px;
+    padding: 0;
+    z-index: 10;
 }
 
 .openBtn:hover {
@@ -629,16 +633,6 @@ html, body {
     .container.active .cloud2 {
         box-shadow: 60px -20px white, 120px -20px white, 180px -20px white,
         240px 0px white, 300px -10px white, 360px 10px white, 420px 20px white;
-    }
-
-    .cloudBtn {
-        box-shadow: 30px 0 #fc6885, 60px 0 #fc6885, 90px 0 #fc6885, 120px 0 #fc6885,
-        120px 30px #fc6885, 90px 30px #fc6885, 60px 30px #fc6885, 30px 30px #fc6885, 0 30px #fc6885;
-    }
-
-    .cloudBtn::before {
-        box-shadow: 30px 0 white, 60px 0 white, 90px 0 white, 120px 0 white,
-        120px 30px white, 90px 30px white, 60px 30px white, 30px 30px white, 0 30px white;
     }
 }
 
